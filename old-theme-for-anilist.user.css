@@ -1,0 +1,68 @@
+/* ==UserStyle==
+@name           Old theme for Anilist
+@namespace      github.com/pgr3931/OldThemeForAnilist
+@version        1.0.0
+@description    The old dark theme for Anilist
+@author         Alzariel
+@license        CDDL-1.0
+@homepageURL    https://github.com/pgr3931/OldThemeForAnilist
+==/UserStyle== */
+@-moz-document domain("anilist.co") {
+    .site-theme-dark {
+        --color-background: 39, 44, 56;
+        --color-foreground: 31, 35, 45;
+        --color-foreground-grey: 25, 29, 38;
+        --color-foreground-grey-dark: 16, 20, 25;
+        --color-foreground-blue: 25, 29, 38;
+        --color-foreground-blue-dark: 19, 23, 29;
+        --color-background-blue-dark: 31, 35, 45;
+        --color-overlay: 34, 28, 22;
+        --color-shadow: 49, 54, 68;
+        --color-shadow-dark: 6, 13, 34;
+        --color-shadow-blue: 103, 132, 187;
+        --color-text: 159, 173, 189;
+        --color-text-light: 129, 140, 153;
+        --color-text-lighter: 133, 150, 165;
+        --color-text-bright: 237, 241, 245;
+        --color-background-100: 31, 35, 45;
+        --color-background-200: 39, 44, 56;
+    }
+
+    .site-theme-dark .nav-unscoped {
+        background: #1F2631
+    }
+
+    .link[data-v-74fb4020]:hover,
+    .search[data-v-74fb4020] svg:hover,
+    .user .chevron[data-v-74fb4020]:hover {
+        color: rgb(61, 180, 242)
+    }
+
+    .media-card[data-v-3429f686],
+    .cover[data-v-3b24ed8f],
+    .select[data-v-063abb0a],
+    .dropdown[data-v-a762532e],
+    .dropdown[data-v-38edf8f8],
+    .search-wrap[data-v-2a18451e],
+    .open-btn[data-v-a762532e],
+    .hover-data[data-v-3b24ed8f],
+    .options[data-v-063abb0a] {
+        box-shadow: none
+    }
+
+    .search[data-v-74fb4020] svg {
+        color: var(--color-text)
+    }
+
+    .footer[data-v-4d687810] {
+        background: #1F2631
+    }
+
+    .footer[data-v-815ccddc] {
+        background: rgb(var(--color-foreground-grey));
+    }
+
+    .nav[data-v-74fb4020] {
+        height: 55px
+    }
+}
