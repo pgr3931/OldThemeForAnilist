@@ -28,10 +28,6 @@
         --color-background-200: 39, 44, 56;
     }
 
-    .site-theme-dark .nav-unscoped {
-        background: #1F2631
-    }
-
     .link[data-v-74fb4020]:hover,
     .search[data-v-74fb4020] svg:hover,
     .user .chevron[data-v-74fb4020]:hover {
@@ -66,9 +62,14 @@
     .nav[data-v-74fb4020] {
         height: 55px
     }
-    
-   .site-theme-dark .nav-unscoped.transparent {
-    background: rgba(31, 38, 49,.5);
-    color: rgb(var(--color-text-light));
-}
+
+    .site-theme-dark .nav-unscoped.transparent {
+        background: rgba(31, 38, 49, .5);
+        color: rgb(var(--color-text));
+    }
+
+    .site-theme-dark .nav-unscoped,
+    .site-theme-dark .nav-unscoped.transparent:hover {
+        background: rgb(var(--color-foreground));
+    }
 }
