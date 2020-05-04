@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           fhv dark mode
 @namespace      github.com/pgr3931/OldThemeForAnilist
-@version        1.0.0
+@version        1.1.0
 @description    A dark mode for ilias
 @author         pgr3931
 @homepageURL    https://github.com/pgr3931/OldThemeForAnilist
@@ -23,7 +23,7 @@
     div.ilBlockInfo,
     #ilTopNav .dropdown-menu,
     .dropdown-menu,
-    .ilFormHeader{
+    .ilFormHeader {
         background-color: rgb(var(--color-background));
         color: rgb(var(--color-text));
     }
@@ -32,12 +32,12 @@
     #ilTopNav .dropdown-menu li a,
     #ilTopBarNav .dropdown-menu a,
     .navbar-default .navbar-text,
-    span.ilTableFootLight{
+    span.ilTableFootLight {
         color: rgb(var(--color-text));
     }
-    
-    .dropdown-menu .divider{
-         background-color: rgb(var(--color-text));
+
+    .dropdown-menu .divider {
+        background-color: rgb(var(--color-text));
     }
 
     #ilTopNav .navbar-nav > .active > a,
@@ -58,12 +58,13 @@
     .ilFormValue > p,
     .ilToolbar.navbar,
     div.ilTableSelectAll,
-    .table > thead > tr > th{
+    .table > thead > tr > th,
+    .form-horizontal {
         background-color: rgb(var(--color-foreground));
         color: rgb(var(--color-text));
     }
-    
-    .ilFormValue > p{
+
+    .ilFormValue > p {
         margin: 0;
         padding: 10px
     }
@@ -80,8 +81,11 @@
         background-color: rgb(var(--color-background));
         color: rgb(var(--color-text));
     }
-    
-    .il-viewcontrol-mode .ilSubmitInactive, .il-viewcontrol-section .ilSubmitInactive, .il-viewcontrol-mode .ilSubmitInactive:hover, .il-viewcontrol-section .ilSubmitInactive:hover{
+
+    .il-viewcontrol-mode .ilSubmitInactive,
+    .il-viewcontrol-section .ilSubmitInactive,
+    .il-viewcontrol-mode .ilSubmitInactive:hover,
+    .il-viewcontrol-section .ilSubmitInactive:hover {
         background-color: rgb(var(--color-background));
         color: #fff
     }
@@ -104,7 +108,8 @@
     .il-item .il-item-property-value,
     .dropdown-menu li > .btn,
     .dropdown-menu li > .btn:hover,
-    div.ilHeaderDesc{
+    div.ilHeaderDesc,
+    .form-horizontal label {
         color: rgb(var(--color-text));
     }
 
@@ -137,13 +142,15 @@
 
     .ilObjListRow:hover,
     a.ilTreeView,
-    a.ilTreeView > img{
+    a.ilTreeView > img {
         background-color: rgb(var(--color-foreground-grey));
     }
-    
-    a.ilTreeView, a.ilTreeView > img{
+
+    a.ilTreeView,
+    a.ilTreeView > img {
         box-shadow: none;
-        -webkit-box-shadow: none;border: none;
+        -webkit-box-shadow: none;
+        border: none;
     }
 
     table.calmini {
@@ -160,23 +167,29 @@
     div.ilCalSelAct,
     .dropdown-menu li > .btn:hover,
     div.ilTableOuter,
-    div.ilTableCommandRow, div.ilTableCommandRowTop,
+    div.ilTableCommandRow,
+    div.ilTableCommandRowTop,
     .ilTableOuter .table,
     .table-striped > tbody > tr:nth-of-type(odd),
-    fieldset.ilTableFilter{
+    fieldset.ilTableFilter {
         background-color: rgb(var(--color-foreground));
     }
-    
-    .table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td{
+
+    .table > thead > tr > th,
+    .table > tbody > tr > th,
+    .table > tfoot > tr > th,
+    .table > thead > tr > td,
+    .table > tbody > tr > td,
+    .table > tfoot > tr > td {
         border-top: 1px solid rgb(var(--color-text));
     }
-    
-    .table > thead > tr > th{
+
+    .table > thead > tr > th {
         border-bottom: 1px solid rgb(var(--color-text));
     }
-    
-    .il-multi-line-cap-3:after{
-        background:  rgb(var(--color-foreground));
+
+    .il-multi-line-cap-3:after {
+        background: rgb(var(--color-foreground));
     }
 
     table.calmini td.calminitoday,
@@ -184,18 +197,31 @@
         background-color: rgb(var(--color-red));
         color: rgb(var(--color-text));
     }
-    
-    .nav > li > a:hover, .nav > li > a:focus{
-         background-color: rgb(var(--color-red));
+
+    .nav > li > a:hover,
+    .nav > li > a:focus {
+        background-color: rgb(var(--color-red));
         color: #fff;
     }
-    
-    .btn-default{
-         background-color: rgb(var(--color-red));
+
+    .btn-default {
+        background-color: rgb(var(--color-red));
     }
 
-    table.calmini td.calminitoday, .ilToolbar.navbar, .il-item-marker, div.ilTableOuter,  div.ilTableCommandRow, div.ilTableCommandRowTop {
+    table.calmini td.calminitoday,
+    .ilToolbar.navbar,
+    .il-item-marker,
+    div.ilTableOuter,
+    div.ilTableCommandRow,
+    div.ilTableCommandRowTop,
+    .form-horizontal,
+    .form-horizontal .form-group {
         border-radius: 5px
+    }
+
+    .form-horizontal .form-group {
+        margin-top: 5px;
+        padding-top: 5px;
     }
 
     table.calmini td:nth-child(1) {
@@ -207,25 +233,27 @@
         border-top-right-radius: 5px;
         border-bottom-right-radius: 5px;
     }
-    
-    .il-item .il-item-divider{
+
+    .il-item .il-item-divider {
         border-bottom: dashed 0.5px rgb(var(--color-text));
     }
-    
-    #ilTab{
+
+    #ilTab {
         border-bottom: solid 2px rgb(var(--color-foreground-grey));
     }
-    
-    .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus{
-        background-color:  rgb(var(--color-foreground-grey));
+
+    .nav-tabs > li.active > a,
+    .nav-tabs > li.active > a:hover,
+    .nav-tabs > li.active > a:focus {
+        background-color: rgb(var(--color-foreground-grey));
     }
-    
-    ul.ilCalSel li{
+
+    ul.ilCalSel li {
         border-bottom: 1px solid rgb(var(--color-text));
         margin-bottom: 2px
     }
 
-   
+
     #il_center_col div.il_Block,
     div.ilBlockInfo {
         margin-top: 2px;
@@ -253,7 +281,7 @@
     #ilTopNav .navbar-nav > li > a:active,
     #ilTopNav .navbar-nav > li > a:focus,
     .ilBlockContent .il-viewcontrol-section .btn.btn-default,
-    .jstree.jstree-default a{
+    .jstree.jstree-default a {
         color: rgb(var(--color-link-red))!important;
     }
 
