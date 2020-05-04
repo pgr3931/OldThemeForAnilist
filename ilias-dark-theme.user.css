@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           fhv dark mode
 @namespace      github.com/pgr3931/OldThemeForAnilist
-@version        1.1.0
+@version        1.2.0
 @description    A dark mode for ilias
 @author         pgr3931
 @homepageURL    https://github.com/pgr3931/OldThemeForAnilist
@@ -23,16 +23,24 @@
     div.ilBlockInfo,
     #ilTopNav .dropdown-menu,
     .dropdown-menu,
-    .ilFormHeader {
+    .ilFormHeader,
+    .modal-content,
+    .close,
+    .close:hover{
         background-color: rgb(var(--color-background));
         color: rgb(var(--color-text));
+    }
+    
+    .il-multi-line-cap-3:after{
+        background:  rgb(var(--color-foreground));
     }
 
     .dropdown-menu li > a,
     #ilTopNav .dropdown-menu li a,
     #ilTopBarNav .dropdown-menu a,
     .navbar-default .navbar-text,
-    span.ilTableFootLight {
+    span.ilTableFootLight,
+    .il_InfoScreenProperty{
         color: rgb(var(--color-text));
     }
 
@@ -59,7 +67,8 @@
     .ilToolbar.navbar,
     div.ilTableSelectAll,
     .table > thead > tr > th,
-    .form-horizontal {
+    .form-horizontal,
+    .il_InfoScreenPropertyValue{
         background-color: rgb(var(--color-foreground));
         color: rgb(var(--color-text));
     }
@@ -142,7 +151,9 @@
 
     .ilObjListRow:hover,
     a.ilTreeView,
-    a.ilTreeView > img {
+    a.ilTreeView > img,
+    .il_HAccordionHead:hover,
+    .il_VAccordionHead:hover {
         background-color: rgb(var(--color-foreground-grey));
     }
 
@@ -171,7 +182,8 @@
     div.ilTableCommandRowTop,
     .ilTableOuter .table,
     .table-striped > tbody > tr:nth-of-type(odd),
-    fieldset.ilTableFilter {
+    fieldset.ilTableFilter,
+    .ilInfoScreenSec.form-horizontal .form-group{
         background-color: rgb(var(--color-foreground));
     }
 
@@ -186,10 +198,6 @@
 
     .table > thead > tr > th {
         border-bottom: 1px solid rgb(var(--color-text));
-    }
-
-    .il-multi-line-cap-3:after {
-        background: rgb(var(--color-foreground));
     }
 
     table.calmini td.calminitoday,
@@ -215,9 +223,22 @@
     div.ilTableCommandRow,
     div.ilTableCommandRowTop,
     .form-horizontal,
-    .form-horizontal .form-group {
+    .form-horizontal .form-group,
+    .il_InfoScreenPropertyValue{
         border-radius: 5px
     }
+
+    .il_VAccordionHead,
+    .il_HAccordionHead {
+        background: url(../../../../templates/default/images/tree_col.svg) no-repeat 9px 10px rgb(var(--color-foreground));
+        border-radius: 5px
+    }
+
+    .il_HAccordionHeadActive,
+    .il_VAccordionHeadActive {
+        background-image: url(../../../../templates/default/images/tree_exp.svg);
+    }
+
 
     .form-horizontal .form-group {
         margin-top: 5px;
@@ -238,8 +259,12 @@
         border-bottom: dashed 0.5px rgb(var(--color-text));
     }
 
-    #ilTab {
+    #ilTab, .modal-header {
         border-bottom: solid 2px rgb(var(--color-foreground-grey));
+    }
+    
+    .modal-footer{
+         border-top: solid 2px rgb(var(--color-foreground-grey));
     }
 
     .nav-tabs > li.active > a,
