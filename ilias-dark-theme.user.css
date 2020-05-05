@@ -7,7 +7,7 @@
 @homepageURL    https://github.com/pgr3931/OldThemeForAnilist
 @updateURL      https://github.com/pgr3931/OldThemeForAnilist/raw/master/ilias-dark-theme.user.css
 ==/UserStyle== */
-@-moz-document domain("fhv.at") {
+@-moz-document domain("ilias.fhv.at") {
     :root {
         --color-background: 39, 44, 56;
         --color-foreground: 31, 35, 45;
