@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Old theme for Anilist
 @namespace      github.com/pgr3931/OldThemeForAnilist
-@version        1.1.1
+@version        1.1.2
 @description    The old dark theme for Anilist
 @author         Alzariel
 @license        CDDL-1.0
@@ -29,9 +29,9 @@
         --color-background-200: 39, 44, 56;
     }
 
-    .link[data-v-74fb4020]:hover,
-    .search[data-v-74fb4020] svg:hover,
-    .user .chevron[data-v-74fb4020]:hover {
+    .link[data-v-4fbac4e1]:hover,
+    .search[data-v-4fbac4e1] svg:hover,
+    .user .chevron[data-v-4fbac4e1]:hover {
         color: rgb(61, 180, 242)
     }
 
@@ -48,7 +48,7 @@
         box-shadow: none
     }
 
-    .search[data-v-74fb4020] svg {
+   .search[data-v-4fbac4e1] svg {
         color: var(--color-text)
     }
 
@@ -60,7 +60,7 @@
         background: rgb(var(--color-foreground-grey));
     }
 
-    .nav[data-v-74fb4020] {
+    .nav[data-v-4fbac4e1] {
         height: 55px
     }
 
